@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  padding: 15px 30px;
+
+  background-color: #222;
+}
+
+
+/* Normal navigation links */
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+a:hover,
+a.active {
+  color: orange;
+}
+
+
+/* Login / Logout */
+.auth-button {
+  margin-left: auto;
+
+  padding: 8px 16px;
+
+  color: white;
+  background-color: transparent;
+
+  border: 1px solid white;
+  border-radius: 5px;
+
+  font: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+
+.auth-button:hover {
+  color: #222;
+  background-color: white;
+}

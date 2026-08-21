@@ -1,0 +1,30 @@
+<div class="table-row">
+
+  <div>
+    {{ coffee().title }}
+  </div>
+
+  <div>
+    <ul>
+      @for (ingredient of coffee().ingredients; track ingredient) {
+        <li>{{ ingredient }}</li>
+      }
+    </ul>
+  </div>
+
+  <div>
+    <img
+      [src]="coffee().image"
+      [alt]="coffee().title"
+      width="100">
+  </div>
+
+  <div>
+    <button
+      type="button"
+      (click)="showDetails()">
+      Détails
+    </button>
+  </div>
+
+</div>

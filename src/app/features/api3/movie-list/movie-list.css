@@ -1,0 +1,41 @@
+h1{font:30px bold;
+color: brown;
+text-align: center;
+margin:10px;}
+
+.movie-table {
+  width: 50%;
+  margin: auto;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 250px 250px 150px;
+  gap: 10px;
+  align-items: center;
+font-weight: bold;
+  background: #eee;
+  padding: 10px;
+  
+}
+
+
+.create-new {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button{
+    border-radius: 10px; 
+    background-color: brown; 
+    text-align: right; 
+    padding: 10px;
+    color: white;
+    font-weight: bold;}
+button:hover{
+    cursor: pointer;
+}
+
+
+

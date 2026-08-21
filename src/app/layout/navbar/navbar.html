@@ -1,0 +1,49 @@
+<nav>
+
+  <a
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">
+    Home
+  </a>
+
+
+  @if (authService.isLogged()) {
+
+    <a
+      routerLink="/coffee"
+      routerLinkActive="active">
+      Coffee
+    </a>
+
+    <a
+      routerLink="/characters/list"
+      routerLinkActive="active">
+      Characters
+    </a>
+
+    <a
+      routerLink="/movies/list"
+      routerLinkActive="active">
+      Movies
+    </a>
+
+    <button
+      type="button"
+      class="auth-button"
+      (click)="logout()">
+      Logout
+    </button>
+
+  } @else {
+
+    <a
+      class="auth-button"
+      routerLink="/login"
+      routerLinkActive="active">
+      Login
+    </a>
+
+  }
+
+</nav>

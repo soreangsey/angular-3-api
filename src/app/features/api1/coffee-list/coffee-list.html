@@ -1,0 +1,26 @@
+
+<h1>Coffee Menu</h1>
+
+<div class="coffee-table">
+
+  <div class="table-header">
+    <div>Title</div>
+    <div>Ingredients</div>
+    <div>Image</div>
+    <div>Action</div>
+  </div>
+
+  @for (coffee of coffees(); track coffee.id) {
+    @if (coffee.title != 'test'){
+
+    <app-coffee-item
+      [coffee]="coffee"
+      (details)="goToDetails($event)"
+    />
+
+  } }@empty {
+
+    <p>Aucun café disponible.</p>
+
+  }
+</div>

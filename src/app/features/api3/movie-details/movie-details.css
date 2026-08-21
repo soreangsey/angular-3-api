@@ -1,0 +1,37 @@
+h1{
+font:30px bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: brown;
+text-align: center;
+margin:10px;}
+
+h2{
+font:18px bold black; 
+margin: 10px 0px; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.details {
+  width: 50%;
+  margin: auto;
+}
+
+img{
+width: 300px;
+margin: auto;}
+
+.back-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a{
+    border-radius: 10px; 
+    background-color: brown; 
+    text-align: right; 
+    padding: 10px;
+    color: white;
+    font-weight: bold;}
+
+a:hover{
+    cursor: pointer;
+}

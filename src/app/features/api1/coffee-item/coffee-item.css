@@ -1,0 +1,13 @@
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 150px 250px 150px 50px;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.table-row {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

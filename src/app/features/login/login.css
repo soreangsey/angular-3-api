@@ -1,0 +1,38 @@
+.login {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.login h2 {
+  text-align: center;
+}
+
+.login div {
+  margin-bottom: 15px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login p {
+  color: red;
+  text-align: center;
+}

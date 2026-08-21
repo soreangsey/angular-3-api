@@ -1,0 +1,31 @@
+  <h1>List of Movies</h1>
+   <div class="create-new">
+    <button   (click)="goToAdd()">
+      Add New Movie
+    </button>
+  </div>
+@if (movies().length > 0) {
+
+  <div class="movie-table">
+
+    <div class="table-header">
+      <div>Title</div>
+      <div>Image</div>
+      <div>Action</div>
+    </div>
+
+    @for (movie of movies(); track movie.id) {
+
+      <app-movie-item
+        [movie]="movie"
+        (details)="goToDetails($event)" />
+
+    }
+ 
+  </div>
+
+} @else {
+
+  <p>Aucun film disponible.</p>
+
+}

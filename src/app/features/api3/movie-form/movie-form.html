@@ -1,0 +1,81 @@
+<h1>Ajouter un film</h1>
+
+<form
+  [formGroup]="movieForm"
+  (ngSubmit)="addMovie()">
+
+
+  <div>
+
+    <label for="title">
+      Title
+    </label>
+
+    <input
+      id="title"
+      type="text"
+      formControlName="title">
+
+    @if (
+      movieForm.get('title')?.hasError('required') &&
+      movieForm.get('title')?.touched
+    ) {
+      <p>
+        Title is mandatory
+      </p>
+    }
+
+  </div>
+
+
+  <div>
+
+    <label for="posterURL">
+      URL 
+    </label>
+
+    <input
+      id="posterURL"
+      type="text"
+      formControlName="posterURL">
+
+    @if (
+      movieForm.get('posterURL')?.hasError('required') &&
+      movieForm.get('posterURL')?.touched
+    ) {
+      <p>
+        L'URL de l'affiche est obligatoire.
+      </p>
+    }
+
+  </div>
+
+
+  <div>
+
+    <label for="imdbId">
+      IMDB ID
+    </label>
+
+    <input
+      id="imdbId"
+      type="text"
+      formControlName="imdbId">
+
+    @if (
+      movieForm.get('imdbId')?.hasError('required') &&
+      movieForm.get('imdbId')?.touched
+    ) {
+      <p>
+        L'IMDB ID est obligatoire.
+      </p>
+    }
+
+  </div>
+
+
+  <button type="submit">
+    Ajouter
+  </button>
+
+</form>
